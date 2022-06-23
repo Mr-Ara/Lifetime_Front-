@@ -1,0 +1,41 @@
+
+
+*{
+  direction: ltr;
+
+}
+
+table{
+  margin: 10px auto 0px;
+  background-color: rgba(0,222,3,0.05);
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+table tr td,th{
+  text-align: center;
+  padding: 10.6px 60px;
+}
+
+
+@media screen and (max-width : 800px) {
+  table{
+    margin: 0px auto 0px;
+    background-color: rgba(0,222,3,0.05);
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+  
+  }
+  
+  table tr td,th{
+    text-align: center;
+    padding: 2px 10px;
+    font-size: 0.5rem;
+  }
+    
+  }
+
+

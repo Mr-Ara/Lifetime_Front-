@@ -1,0 +1,262 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+@media screen and (min-width : 800px) {
+.navbar{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(to left, #629cb3, #2f5b33);
+  margin-top: 40px;
+  
+}
+}
+@media screen and (max-width : 800px) {
+  .navbar{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background: linear-gradient(to left, #629cb3, #2f5b33);
+    margin-top: 40px;
+    
+  }
+  }
+.navbar .logo{
+  display: flex;
+}
+@media screen and (min-width : 800px) {
+.navbar .logo h1{
+  margin: auto;
+  color: #a8bf5a;
+  font-size: 2rem;
+  font-family: fantasy;
+}
+}
+@media screen and (min-width : 800px) {
+.navbar .logo img{
+width: 300px;
+height: 330px;
+position: relative;
+left: -75px;
+}
+}
+@media screen and (max-width : 799px) {
+  .navbar .logo img{
+  width: 160px;
+  height: 200px;
+  position: relative;
+  left: -75px;
+  }
+  }
+
+@media screen and (min-width : 1380px) {
+  .navbar .left-options{
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar .right-options{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .navbar .right-options span{
+    
+    
+    padding-right: 30px;
+    font-size: 1.2em;
+    font: bold;
+    color: antiquewhite;
+  }
+  .navbar .left-options span{
+    
+    padding-right: 30px;
+    font-size: 1.2em;
+    font: bold;
+    color: antiquewhite;
+  
+  }
+  .navbar .left-options span:hover{
+  
+  border-bottom: 1px solid #a8bf5a;
+  border-radius: 50%;
+  }
+  .navbar .right-options span:hover{
+  
+    border-bottom: 1px solid #3b7085;
+    border-radius: 50%;
+    }
+    
+   
+}
+
+@media screen and (max-width : 1379px) {
+  .navbar .left-options{
+    display: none;
+    
+  }
+  .navbar .right-options{
+    display: none;
+    
+  }
+ 
+}
+
+@media screen and (min-width : 800px) {
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #a8bf5a;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+}
+
+
+@media screen and (max-width : 800px) {
+
+  .button-86 {
+    all: unset;
+    width: 50px;
+    height: 15px;
+    font-size: 0.5 rem;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-86::after,
+  .button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #a8bf5a;
+    border-radius: 10px;
+  }
+  
+  .button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  .button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+
+
+}
+/* .navbar .basket button{
+  border: 0.5px #2f5b33 solid;
+  background-color: #629cb3;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  color: antiquewhite;
+  
+  } */
